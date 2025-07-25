@@ -15,6 +15,12 @@ function Timer({ task }: TimerProps) {
         // countdown if is running and not finished
         if (isRunning && !isFinished) {
             interval = setInterval(() => {
+                if (prev <= 1) {
+                    clearInterval(interval);
+                    setIsFinished(true); // <--- now it's actually used
+                    return 0;
+                }
+
                 setSecondsLeft((prev) => (prev > 0 ? prev - 1 : 0));
             }, 1000);
         }
