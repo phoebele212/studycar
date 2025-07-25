@@ -16,7 +16,15 @@ In VS Code, open a new terminal:
 
 `cd studycar`
 
-Open a terminal (or CMD) and cd into the project folder
+If using a ZIP:
+
+- Unzip the folder
+
+- Open a terminal (or CMD)
+
+Navigate into the project folder:
+
+`cd path-to-studycar-folder`
 
 ## 3. Install Dependencies
 
@@ -39,3 +47,5 @@ This will start the Vite development server.
 Look in the terminal for a line like:
 
 `Local: http://localhost:5173/`
+
+Click it (or copy-paste into your browser) and you’ll see StudyCar running!
