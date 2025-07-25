@@ -1,69 +1,42 @@
-# React + TypeScript + Vite
+Steps to run the StudyCar:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Install Node.js
 
-Currently, two official plugins are available:
+If they don’t already have Node.js:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Go to: https://nodejs.org
 
-## Expanding the ESLint configuration
+Download the LTS version and install it.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 2. Download or Clone the Project
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+If you shared your code via GitHub:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+git clone https://github.com/your-username/studycar.git
+cd studycar
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Or if you zipped the project, unzip it!
+Open a terminal (or CMD) and cd into the project folder
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 3. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Inside the project folder, run:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm install
+
+This will install all the packages listed in your package.json.
+
+## 4. Run the App
+
+After installation, run:
+
+npm run dev
+
+This will start the Vite development server.
+
+5. Open in Browser
+   Look in the terminal for a line like:
+
+Local: http://localhost:5173/
+
+Click that link or copy-paste it into a browser. She’ll see the timer running!
