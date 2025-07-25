@@ -12,8 +12,8 @@ Download the LTS version and install it.
 
 If you shared your code via GitHub:
 
-git clone https://github.com/your-username/studycar.git
-cd studycar
+`git clone https://github.com/your-username/studycar.git
+cd studycar`
 
 Or if you zipped the project, unzip it!
 Open a terminal (or CMD) and cd into the project folder
@@ -22,21 +22,20 @@ Open a terminal (or CMD) and cd into the project folder
 
 Inside the project folder, run:
 
-npm install
+`npm install`
 
-This will install all the packages listed in your package.json.
+This will install all the packages listed in your `package.json`.
 
 ## 4. Run the App
 
 After installation, run:
 
-npm run dev
+`npm run dev`
 
 This will start the Vite development server.
 
-5. Open in Browser
-   Look in the terminal for a line like:
+## 5. Open in Browser
 
-Local: http://localhost:5173/
+Look in the terminal for a line like:
 
-Click that link or copy-paste it into a browser. She’ll see the timer running!
+`Local: http://localhost:5173/`
