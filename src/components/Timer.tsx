@@ -1,19 +1,25 @@
 import { useState, useEffect } from 'react';
 
-function Timer() {
+interface TimerProps {
+    task: string;
+}
+
+function Timer({ task }: TimerProps) {
     const [secondsLeft, setSecondsLeft] = useState(1500); //25 min
     const [isRunning, setIsRunning] = useState(false);
+    const [isFinished, setIsFinished] = useState(false);
 
     useEffect(() => {
         let interval: number | undefined;
 
-        if (isRunning) {
+        // countdown if is running and not finished
+        if (isRunning && !isFinished) {
             interval = setInterval(() => {
                 setSecondsLeft((prev) => (prev > 0 ? prev - 1 : 0));
             }, 1000);
         }
         return () => clearInterval(interval);
-    }, [isRunning]);
+    }, [isRunning, isFinished]);
 
     const formatTime = (sec: number) => {
         const min = Math.floor(sec / 60);
@@ -24,9 +30,12 @@ function Timer() {
     return (
         <div>
             <h2>{formatTime(secondsLeft)}</h2>
-            <button onClick={() => setIsRunning(!isRunning)}>
-                {isRunning ? 'Pause' : 'Start'}
+            <p>Task: <strong>{task}</strong></p>
+            <button onClick={() => setIsRunning(!isRunning)} disabled={isFinished}>
+                {isRunning ? 'Pause' : 'Resume'}
             </button>
+
+            {isFinished && <p>Good job! Your car loves you!</p>}
         </div>
     );
 }
