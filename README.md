@@ -12,8 +12,9 @@ Download the LTS version and install it.
 
 If you shared your code via GitHub:
 
-`git clone https://github.com/your-username/studycar.git
-cd studycar`
+`git clone https://github.com/your-username/studycar.git`
+
+1cd studycar`
 
 Or if you zipped the project, unzip it!
 Open a terminal (or CMD) and cd into the project folder
