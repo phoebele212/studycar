@@ -1,10 +1,19 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+import Timer from './components/Timer'
+
 function App() {
-    return (
-        <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-            <h1>🐱 StudyCar</h1>
-            <p>Welcome! Let's start studying!</p>
-        </div>
-    );
+
+  return (
+    <>
+      <div>
+        <h1> Study Car</h1>
+        <p>Choose your own car and start studying!</p>
+        <Timer />
+      </div>
+    </>
+  )
 }
 
 export default App;
