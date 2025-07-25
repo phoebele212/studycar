@@ -2,7 +2,7 @@ Steps to run the StudyCar:
 
 ## 1. Install Node.js
 
-If they don’t already have Node.js:
+If you don’t already have Node.js:
 
 Go to: https://nodejs.org
 
@@ -10,13 +10,12 @@ Download the LTS version and install it.
 
 ## 2. Download or Clone the Project
 
-If you shared your code via GitHub:
+In VS Code, open a new terminal:
 
 `git clone https://github.com/your-username/studycar.git`
 
 `cd studycar`
 
-Or if you zipped the project, unzip it!
 Open a terminal (or CMD) and cd into the project folder
 
 ## 3. Install Dependencies
