@@ -26,6 +26,11 @@ function Timer({ task }: TimerProps) {
         const s = sec % 60;
         return `${min.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     };
+    useEffect(() => {
+        if (secondsLeft === 0) {
+            setIsFinished(true);
+        }
+    }, [secondsLeft]);
 
     return (
         <div>
