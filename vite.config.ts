@@ -16,12 +16,12 @@ export default defineConfig({
         theme_color: '#f3f3f3',
         icons: [
           {
-            src: 'cat1.png',
+            src: 'car1.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'cat1.png',
+            src: 'car1.png',
             sizes: '512x512',
             type: 'image/png'
           }
