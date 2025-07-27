@@ -1,20 +1,21 @@
 .menu-screen {
     font-family: 'Pixelify Sans', sans-serif;
-    width: 500px;
-    height: 500px;
+    width: 380pt;
+    height: 350pt;
     background-color: #E596AC;
     padding: 10px;
 }
 
 .menu-screen button {
-    background-color: antiquewhite;
-    border-radius: 4cm;
-    font-size: 14pt;
+    background-color: #fccf96;
+    border-radius: 0.6cm;
+    font-size: 12pt;
 }
 
 .menu-screen h2 {
     font-size: 32pt;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
@@ -42,6 +43,17 @@
     justify-content: start;
     align-items: center;
     margin-left: 4vw;
-    gap: 10px;
-    width: 100px;
+    gap: 5px;
+}
+
+.side-buttons button {
+    width: 110px;
+    height: 60px;
+}
+
+.left-content button {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    font-size: 15pt;
 }
