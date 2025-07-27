@@ -1,9 +1,10 @@
 import TaskInput from './TaskInput';
 import Timer from './Timer';
 import { useState } from 'react';
+import type { Screen } from '../App';
 
 interface Props {
-    setScreen: (s: string) => void;
+    setScreen: React.Dispatch<React.SetStateAction<Screen>>;
 }
 function TimerScreen({ setScreen }: Props) {
     const [task, setTask] = useState('');

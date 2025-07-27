@@ -1,4 +1,4 @@
-import type { Screen } from '../types';
+import type { Screen } from '../App';
 
 interface Props {
     setScreen: React.Dispatch<React.SetStateAction<Screen>>;
