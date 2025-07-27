@@ -5,15 +5,16 @@ import TaskInput from './components/TaskInput'
 
 function App() {
   const [task, setTask] = useState('');
-  const [time, setTime] = useState('');
+  const [time, setTime] = useState(0);
   const [started, setStarted] = useState(false);
 
-  const handleStarted = (taskName: string, timeValue: string) => {
+  const handleStarted = (taskName: string, timeValue: number) => {
     setTask(taskName);
     setTime(timeValue);
     setStarted(true);
   }
   return (
+
     <>
       <div>
         <h1> Study Car</h1>
