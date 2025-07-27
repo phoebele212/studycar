@@ -1,0 +1,47 @@
+.menu-screen {
+    font-family: 'Pixelify Sans', sans-serif;
+    width: 500px;
+    height: 500px;
+    background-color: #E596AC;
+    padding: 10px;
+}
+
+.menu-screen button {
+    background-color: antiquewhite;
+    border-radius: 4cm;
+    font-size: 14pt;
+}
+
+.menu-screen h2 {
+    font-size: 32pt;
+    margin-bottom: 30px;
+}
+
+
+.menu-screen img {
+    width: 180px;
+    margin-bottom: 40px;
+}
+
+.menu-screen .main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-screen .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu-screen .side-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-left: 4vw;
+    gap: 10px;
+    width: 100px;
+}
