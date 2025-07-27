@@ -1,4 +1,5 @@
 import type { Screen } from '../App';
+import '../styles/MenuScreen.css'
 
 interface Props {
     setScreen: React.Dispatch<React.SetStateAction<Screen>>;
