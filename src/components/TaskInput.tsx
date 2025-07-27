@@ -1,17 +1,20 @@
 import { useState } from 'react';
 
 interface TaskInputProps {
-    onStart: (task: string) => void;
+    onStart: (task: string, time: number) => void;
 }
 
 function TaskInput({ onStart }: TaskInputProps) {
     const [task, setTask] = useState('');
+    const [time, setTime] = useState('');
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (task.trim()) {
-            onStart(task.trim());
+
+        if (task.trim() && time.trim()) {
+            onStart(task.trim(), Number(time));
             setTask('');
+            setTime('');
         }
     };
 
@@ -22,6 +25,12 @@ function TaskInput({ onStart }: TaskInputProps) {
                 placeholder="Enter your task"
                 value={task}
                 onChange={(e) => setTask(e.target.value)} />
+
+            <input
+                type="number"
+                placeholder="Focus time in minutes"
+                value={time}
+                onChange={(e) => setTime(e.target.value)} />
 
             <button type="submit">
                 Start Session

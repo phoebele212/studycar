@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 
 interface TimerProps {
     task: string;
+    time: number;
 }
 
-function Timer({ task }: TimerProps) {
-    const [secondsLeft, setSecondsLeft] = useState(1500); //25 min
+function Timer({ task, time }: TimerProps) {
+    const [secondsLeft, setSecondsLeft] = useState(() => (time * 60)); //25 min
     const [isRunning, setIsRunning] = useState(false);
     const [isFinished, setIsFinished] = useState(false);
 
@@ -26,6 +27,7 @@ function Timer({ task }: TimerProps) {
         const s = sec % 60;
         return `${min.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     };
+
     useEffect(() => {
         if (secondsLeft === 0) {
             setIsFinished(true);
@@ -37,7 +39,13 @@ function Timer({ task }: TimerProps) {
             <h2>{formatTime(secondsLeft)}</h2>
             <p>Task: <strong>{task}</strong></p>
             <button onClick={() => setIsRunning(!isRunning)} disabled={isFinished}>
-                {isRunning ? 'Pause' : 'Resume'}
+                {isFinished
+                    ? 'Finished' :
+                    secondsLeft === time * 60
+                        ? 'Start'
+                        : isRunning
+                            ? 'Pause'
+                            : 'Resume'}
             </button>
 
             {isFinished && <p>Good job! Your car loves you!</p>}

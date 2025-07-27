@@ -4,17 +4,25 @@ import Timer from './components/Timer'
 import TaskInput from './components/TaskInput'
 
 function App() {
-  const [currentTask, setCurrentTask] = useState<string | null>(null);
+  const [task, setTask] = useState('');
+  const [time, setTime] = useState('');
+  const [started, setStarted] = useState(false);
+
+  const handleStarted = (taskName: string, timeValue: string) => {
+    setTask(taskName);
+    setTime(timeValue);
+    setStarted(true);
+  }
   return (
     <>
       <div>
         <h1> Study Car</h1>
         <p>Choose your own car and start studying!</p>
 
-        {!currentTask ? (
-          <TaskInput onStart={setCurrentTask} />
+        {started ? (
+          <Timer time={time} task={task} />
         ) : (
-          <Timer task={currentTask} />
+          <TaskInput onStart={handleStarted} />
         )}
       </div>
     </>
