@@ -1,7 +1,8 @@
-interface Props {
-    setScreen: (s: string) => void;
-}
+import type { Screen } from '../types';
 
+interface Props {
+    setScreen: React.Dispatch<React.SetStateAction<Screen>>;
+}
 function HomeScreen({ setScreen }: Props) {
     return (
         <div>

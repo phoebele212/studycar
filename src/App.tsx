@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
 
 import ClosetScreen from './components/ClosetScreen';
 import StoreScreen from './components/StoreScreen';
@@ -9,10 +9,11 @@ import TimerScreen from './components/TimerScreen';
 import HomeScreen from './components/HomeScreen';
 import MenuScreen from './components/MenuScreen';
 
+// Define the possible screen names
+export type Screen = 'home' | 'menu' | 'timer' | 'closet' | 'store' | 'settings' | 'tutorial';
+
 function App() {
-  const [screen, setScreen] = useState<
-    'home' | 'menu' | 'timer' | 'closet' | 'store' | 'settings' | 'tutorial'
-  >('home');
+  const [screen, setScreen] = useState<Screen>('home');
 
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
       {screen === 'settings' && <SettingsScreen setScreen={setScreen} />}
       {screen === 'tutorial' && <TutorialScreen setScreen={setScreen} />}
     </>
-  )
+  );
 }
 
 export default App;
