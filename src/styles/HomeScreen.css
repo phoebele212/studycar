@@ -1,0 +1,25 @@
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
+
+.home-screen h1 {
+    margin: 0;
+}
+
+.home-screen h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.home-screen img {
+    width: 200px;
+}
+
+.home-screen button {
+    background-color: #fccf96;
+    margin-bottom: 50px;
+}

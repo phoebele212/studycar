@@ -11,7 +11,7 @@ function MenuScreen({ setScreen }: Props) {
 
             <div className='main-section'>
                 <div className='left-content'>
-                    <img src='Car1.png' alt='Cat image'></img>
+                    <img src='Car1.PNG' alt='Cat image'></img>
                     <button onClick={() => setScreen('timer')}>Study Session</button>
                 </div>
                 <div className='side-buttons'>
