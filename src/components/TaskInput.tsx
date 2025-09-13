@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../styles/TimerScreen.css';
 
 interface TaskInputProps {
     onStart: (task: string, time: number) => void;
@@ -20,20 +21,23 @@ function TaskInput({ onStart }: TaskInputProps) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                placeholder="Enter your task"
-                value={task}
-                onChange={(e) => setTask(e.target.value)} />
-
-            <input
-                type="number"
-                placeholder="Focus time in minutes"
-                value={time}
-                onChange={(e) => setTime(e.target.value)} />
-
+            <div className="task-input-form">
+                <label>Task</label>
+                <input
+                    type="text"
+                    placeholder="Enter your task"
+                    value={task}
+                    onChange={(e) => setTask(e.target.value)} />
+                <br />
+                <label>Time</label>
+                <input
+                    type="number"
+                    placeholder="Focus time in minutes"
+                    value={time}
+                    onChange={(e) => setTime(e.target.value)} />
+            </div>
             <button type="submit">
-                Start Session
+                START SESSION
             </button>
         </form>
     )

@@ -8,8 +8,8 @@ function HomeScreen({ setScreen }: Props) {
         <div className='screen home-screen'>
             <h2>WELCOME TO</h2>
             <h1>StudyCar</h1>
-            <img src='Car1.PNG' alt="Cat image"></img>
-            <button onClick={() => setScreen('menu')}>Start</button>
+            <img src='/Car1.png' alt="Cat image" className="pixel-art"></img>
+            <button onClick={() => setScreen('menu')}>START</button>
         </div >
     );
 }

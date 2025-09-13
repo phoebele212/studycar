@@ -2,6 +2,7 @@ import TaskInput from './TaskInput';
 import Timer from './Timer';
 import { useState } from 'react';
 import type { Screen } from '../App';
+import '../styles/TimerScreen.css';
 
 interface Props {
     setScreen: React.Dispatch<React.SetStateAction<Screen>>;
@@ -17,14 +18,14 @@ function TimerScreen({ setScreen }: Props) {
         setStarted(true);
     }
     return (
-        <div>
+        <div className="timer-screen">
             {started ? (
                 <Timer time={time} task={task} />
             ) : (
                 <TaskInput onStart={handleStarted} />
             )}
 
-            <button onClick={() => setScreen('menu')}>Back to Menu</button>
+            <button onClick={() => setScreen('menu')}>BACK TO MENU</button>
 
         </div>
     );

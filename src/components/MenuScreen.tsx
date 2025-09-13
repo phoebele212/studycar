@@ -11,15 +11,16 @@ function MenuScreen({ setScreen }: Props) {
 
             <div className='main-section'>
                 <div className='left-content'>
-                    <img src='Car1.PNG' alt='Cat image'></img>
-                    <button onClick={() => setScreen('timer')}>Study Session</button>
+                    <img src='/Car1.png' alt="Cat image" className="pixel-art"></img>
+                    <h3>COINS:00</h3>
+                    <button onClick={() => setScreen('timer')}>STUDY SESSION</button>
                 </div>
                 <div className='side-buttons'>
-                    <button onClick={() => setScreen('closet')}>Closet</button>
-                    <button onClick={() => setScreen('store')}>Store</button>
-                    <button onClick={() => setScreen('tutorial')}>Tutorial</button>
-                    <button onClick={() => setScreen('settings')}>Settings</button>
-                    <button onClick={() => setScreen('home')}>Back to Home</button>
+                    <button onClick={() => setScreen('closet')}>CLOSET</button>
+                    <button onClick={() => setScreen('store')}>STORE</button>
+                    <button onClick={() => setScreen('tutorial')}>TUTORIAL</button>
+                    <button onClick={() => setScreen('settings')}>SETTINGS</button>
+                    <button onClick={() => setScreen('home')}>BACK TO HOME</button>
                 </div>
             </div>
         </div>
