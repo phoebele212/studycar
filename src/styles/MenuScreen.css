@@ -2,13 +2,10 @@
     font-family: 'Pixelify Sans', sans-serif;
     width: 380pt;
     height: 350pt;
-    background-color: #E596AC;
     padding: 10px;
 }
 
 .menu-screen button {
-    background-color: #fccf96;
-    border-radius: 0.6cm;
     font-size: 13pt;
 }
 
@@ -59,7 +56,7 @@
 }
 
 .left-content button {
-    width: 201px;
+    width: 200px;
     height: 80px;
     text-align: center;
     font-size: 16pt;

@@ -50,8 +50,8 @@ button {
   font-family: 'Pixelify Sans', sans-serif;
   background-color: #fccf96;
   border-radius: 0.6cm;
-  width: 6em;
-  height: 2.5em;
+  /* width: 6em;
+  height: 2.5em; */
   text-align: center;
   font-size: 20pt;
 }
@@ -80,19 +80,4 @@ button:focus-visible {
   image-rendering: crisp-edges;
   width: 200px;
   height: auto;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
 }

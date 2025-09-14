@@ -21,6 +21,7 @@
 }
 
 .home-screen button {
-    background-color: #fccf96;
     margin-bottom: 50px;
+    width: 120px;
+    height: 50px;
 }
