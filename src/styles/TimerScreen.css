@@ -1,7 +1,7 @@
 .timer-screen button {
     font-size: 13pt;
-    width: 110px;
-    height: 60px;
+    width: 120px;
+    height: 50px;
 }
 
 .task-input-form {
@@ -24,4 +24,17 @@
   border: 1px solid #ccc;
   font-family: 'Pixelify Sans', sans-serif;
   font-size: 14pt;
+  background-color: white;
+}
+
+.task-input-div {
+  margin-top: -10px;
+}
+
+.task-input-div label {
+  padding-right: 9px;
+}
+
+.back-to-menu-button {
+  margin-top: 8px;
 }

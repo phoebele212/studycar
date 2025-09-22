@@ -24,8 +24,7 @@ function TimerScreen({ setScreen }: Props) {
             ) : (
                 <TaskInput onStart={handleStarted} />
             )}
-
-            <button onClick={() => setScreen('menu')}>BACK TO MENU</button>
+            <button className="back-to-menu-button" onClick={() => setScreen('menu')}>BACK TO MENU</button>
 
         </div>
     );
