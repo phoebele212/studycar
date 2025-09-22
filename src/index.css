@@ -33,7 +33,8 @@ body, html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: #E596AC;
+  background: #E596AC;
+  padding-top: env(safe-area-inset-top);
 }
 
 body {
