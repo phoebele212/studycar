@@ -51,6 +51,7 @@ button {
   font-family: 'Pixelify Sans', sans-serif;
   background-color: #fccf96;
   border-radius: 0.6cm;
+  border: 1.5px solid #222;
   /* width: 6em;
   height: 2.5em; */
   text-align: center;
@@ -66,7 +67,8 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /*outline: 4px auto -webkit-focus-ring-color;*/
+  outline: 1.5px solid #d66c61;
 }
 
 .screen {
